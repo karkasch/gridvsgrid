@@ -1,0 +1,6 @@
+WebApplication5/wwwroot/lib/DefinitelyTyped/
+WebApplication5/node_modules/
+packages/
+WebApplication5/wwwroot/lib/
+WebApplication5/wwwroot/app1/*.js
+WebApplication5/wwwroot/app1/*.map
