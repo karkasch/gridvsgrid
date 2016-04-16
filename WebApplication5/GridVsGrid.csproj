@@ -138,9 +138,6 @@
     <Content Include="Web.config" />
     <Content Include="wwwroot\app1\kendo-grid.html" />
     <Content Include="wwwroot\app1\index.html" />
-    <Content Include="wwwroot\lib\angular-route\angular-route.min.js" />
-    <Content Include="wwwroot\lib\angularjs\angular.js" />
-    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
     <Content Include="wwwroot\lib\kendo\2016.1.412\js\kendo.all.min.js" />
     <Content Include="wwwroot\lib\kendo\2016.1.412\styles\kendo.common-office365.min.css" />
     <Content Include="wwwroot\lib\kendo\2016.1.412\styles\kendo.common.core.min.css" />
@@ -162,6 +159,7 @@
     <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\sprite_kpi_2x.png" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="API\UsersController.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Global.asax.cs">
@@ -188,7 +186,6 @@
     <Content Include="wwwroot\css\app.less" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="API\" />
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />

@@ -5,7 +5,7 @@ var minify = require("gulp-minify");
 var inject = require("gulp-inject");
 
 var lessFiles = [
-    "./wwwroot/css/app.less"
+    "./wwwroot/css/*.less"
 ];
 
 var tsFiles = [
@@ -22,16 +22,16 @@ gulp.task('less', function () {
 gulp.task("ts", function () {
     return gulp.src(tsFiles, { base: "." })
             .pipe(ts())
-            .pipe(minify({
-                ext: ".min.js"
-            }))
+            //.pipe(minify({
+            //    ext: ".min.js"
+            //}))
             .pipe(gulp.dest("."));
 });
 
 gulp.task("inject", ["less", "ts"], function () {
     var appFiles = [
-        "./wwwroot/lib/kendo/2015.1.412/styles/kendo.common-office365.min.css",
-        "./wwwroot/lib/kendo/2015.1.412/styles/kendo.office365.min.css",
+        "./wwwroot/lib/kendo/2016.1.412/styles/kendo.common-office365.min.css",
+        "./wwwroot/lib/kendo/2016.1.412/styles/kendo.office365.min.css",
         "./wwwroot/css/app.css",
         "./wwwroot/lib/jquery/dist/jquery.min.js",
         "./wwwroot/lib/angularjs/angular.min.js",
@@ -47,8 +47,8 @@ gulp.task("inject", ["less", "ts"], function () {
 });
 
 gulp.task("watch", function () {
-    return gulp.watch(lessFiles, ["less"]);
-    return gulp.watch(tsFiles, ["ts"]);
+    gulp.watch(lessFiles, ["less"]);
+    gulp.watch(tsFiles, ["ts"]);
 });
 
 gulp.task("default", ["inject"]);
