@@ -2,19 +2,23 @@
 <html>
 <head>
     <title>1</title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
     <!-- inject:css -->
+    <link rel="stylesheet" href="/wwwroot/css/app.css">
     <!-- endinject -->
 </head>
 <body ng-app="app">
     <header>
-        Header
+        <a href="#/">Header</a>
     </header>
-    <main><ng-view></ng-view></main>
+    <main ng-view></main>
     <!-- inject:js -->
+    <script src="/wwwroot/lib/jquery/dist/jquery.min.js"></script>
     <script src="/wwwroot/lib/angularjs/angular.min.js"></script>
     <script src="/wwwroot/lib/angular-route/angular-route.min.js"></script>
+    <script src="/wwwroot/lib/kendo/2016.1.412/js/kendo.all.min.js"></script>
     <script src="/wwwroot/app1/index-controller.min.js"></script>
+    <script src="/wwwroot/app1/kendogrid-controller.min.js"></script>
     <script src="/wwwroot/app1/app.min.js"></script>
     <!-- endinject -->
 </body>

@@ -136,9 +136,30 @@
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\app1\kendo-grid.html" />
     <Content Include="wwwroot\app1\index.html" />
     <Content Include="wwwroot\lib\angular-route\angular-route.min.js" />
     <Content Include="wwwroot\lib\angularjs\angular.js" />
+    <Content Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\js\kendo.all.min.js" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\kendo.common-office365.min.css" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\kendo.common.core.min.css" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\kendo.common.min.css" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\kendo.office365.min.css" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\editor.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\imagebrowser.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\indeterminate.gif" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\loading-image.gif" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\loading.gif" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\loading_2x.gif" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\markers.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\markers_2x.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\slider-h.gif" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\slider-v.gif" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\sprite.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\sprite_2x.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\sprite_kpi.png" />
+    <Content Include="wwwroot\lib\kendo\2016.1.412\styles\Office365\sprite_kpi_2x.png" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -164,6 +185,7 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="wwwroot\css\app.less" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="API\" />
@@ -174,6 +196,8 @@
   <ItemGroup>
     <TypeScriptCompile Include="wwwroot\app1\app.ts" />
     <TypeScriptCompile Include="wwwroot\app1\index-controller.ts" />
+    <TypeScriptCompile Include="wwwroot\app1\kendogrid-controller.ts" />
+    <TypeScriptCompile Include="wwwroot\lib\kendo\2016.1.412\typescript\kendo.all.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />

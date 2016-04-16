@@ -1,0 +1,76 @@
+﻿html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html, body {
+    height: 100%;
+    margin:0;
+    padding: 0;
+}
+
+body {
+    color: #1C3F4A;
+    font-family: Calibri;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    padding: 0 15px 0 15px;
+    height: 60px;
+    background-color: #1C3F4A;
+    color: #f0f0f0;
+
+    line-height: 60px;
+
+    a {
+        color: #f0f0f0;
+    }
+}
+
+main {
+    display: block;
+    height: 100%;
+    padding: 70px 15px 5px 15px;
+}
+
+aside {
+    display: block;
+    width: 24%;
+    height: 100%;
+    float: left;
+    background-color: #bdd7e0;
+    padding: 0 10px 10px 10px;
+    border-radius: 2px;
+}
+
+.main {
+    display: block;
+    width: 75%;
+    height: 100%;
+    margin-left: 1%;
+    float: left;
+
+    overflow-y: auto;
+
+    :after {
+        clear: both;
+        height: 0;
+        overflow: hidden;
+    }
+}
+
+h1, h2, h3, h4 {
+    font-weight: 100;
+    margin: 5px 0 5px 0;
+}
