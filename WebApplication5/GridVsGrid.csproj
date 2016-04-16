@@ -184,6 +184,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <Content Include="wwwroot\css\app.less" />
+    <Content Include="wwwroot\css\kendo-grid.less" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

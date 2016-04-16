@@ -22,9 +22,9 @@ gulp.task('less', function () {
 gulp.task("ts", function () {
     return gulp.src(tsFiles, { base: "." })
             .pipe(ts())
-            //.pipe(minify({
-            //    ext: ".min.js"
-            //}))
+            .pipe(minify({
+                ext: ".min.js"
+            }))
             .pipe(gulp.dest("."));
 });
 

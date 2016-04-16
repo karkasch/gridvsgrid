@@ -19,12 +19,12 @@ module App {
                 columns: [
                     { field: "firstName", title: "First Name", width: 120 },
                     { field: "lastName", title: "Last Name", template: `<a ng-click="vm.showUserDetails('#: lastName #')">#: lastName #</a>` },
-                    { field: "country", width: "120px", minScreenWidth: 900 },
-                    { field: "age", width: 90, minScreenWidth: 800 },
-                    { field: "createdUtc" }
+                    { field: "country", title: "Country", width: "120px", minScreenWidth: 900 },
+                    { field: "age", title: "Age", width: 90, minScreenWidth: 800 },
+                    { field: "createdUtc", title: "Date created" }
                 ],
                 dataSource: {
-                    type: "json",
+                    //type: "odata",
                     transport: {
                         read: "/api/users"
                     },
@@ -43,8 +43,16 @@ module App {
                 //pageable: true,
                 scrollable: {
                     virtual: true
+                },
+                change: function (e) {
+                    console.log("grid:change ", e, this);
+                    var selectedRows = this.select();
+                    var selectedDataItems = [];
+                    for (var i = 0; i < selectedRows.length; i++) {
+                        var dataItem = this.dataItem(selectedRows[i]);
+                        selectedDataItems.push(dataItem);
+                    }
                 }
-
             };
         }
 
