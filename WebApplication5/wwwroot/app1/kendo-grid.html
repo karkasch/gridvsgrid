@@ -9,8 +9,9 @@
 <section class="main">
     <h1>{{vm.title}}</h1>
 
-    <kendo-grid options="vm.gridOptions">
-    </kendo-grid>
+    <div kendo-grid="vm.grid" options="vm.gridOptions" k-on-change="vm.handleGridChange(data, dataItem, columns)"></div>
 
     <div>Selected last name: {{vm.selectedItem}}</div>
+
+    <div><a ng-click="vm.refreshGrid()">Refresh</a></div>
 </section>
