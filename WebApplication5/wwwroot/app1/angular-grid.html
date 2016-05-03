@@ -1,0 +1,17 @@
+﻿<aside>
+    <h2>Menu</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+</aside>
+<section class="main">
+    <h1>{{vm.title}}</h1>
+
+    <div ui-grid="vm.gridOptions" ui-grid-infinite-scroll class="myGrid"></div>
+
+    <div>Selected last name: {{vm.selectedItem}}</div>
+
+    <div><a ng-click="vm.refreshGrid()">Refresh</a></div>
+</section>

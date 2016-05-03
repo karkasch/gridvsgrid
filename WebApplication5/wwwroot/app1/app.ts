@@ -19,13 +19,22 @@ module App {
                     templateUrl: "./wwwroot/app1/kendo-grid.html",
                     controller: KendoGridController.id,
                     controllerAs: "vm"
+                })
+                .when("/angular-grid",
+                {
+                    name: "angulargrid",
+                    templateUrl: "./wwwroot/app1/angular-grid.html",
+                    controller: AngularGridController.id,
+                    controllerAs: "vm"
                 });
         } 
     }
 
-    angular.module("app", ["ngRoute", "kendo.directives"])
+    angular.module("app", ["ngRoute", "kendo.directives", "ui.grid"])
+        .service(ApiService.id, ApiService)
         .controller(IndexController.id, IndexController)
         .controller(KendoGridController.id, KendoGridController)
+        .controller(AngularGridController.id, AngularGridController)
         .config(Config);
 }
 

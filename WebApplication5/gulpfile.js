@@ -32,11 +32,17 @@ gulp.task("inject", ["less", "ts"], function () {
     var appFiles = [
         "./wwwroot/lib/kendo/2016.1.412/styles/kendo.common-office365.min.css",
         "./wwwroot/lib/kendo/2016.1.412/styles/kendo.office365.min.css",
+        "./wwwroot/lib/angular-ui-grid/ui-grid.min.css",
         "./wwwroot/css/app.css",
+
         "./wwwroot/lib/jquery/dist/jquery.min.js",
         "./wwwroot/lib/angularjs/angular.min.js",
         "./wwwroot/lib/angular-route/angular-route.min.js",
+
         "./wwwroot/lib/kendo/2016.1.412/js/kendo.all.min.js",
+        "./wwwroot/lib/angular-ui-grid/ui-grid.min.js",
+
+        "./wwwroot/app1/*-service.min.js",
         "./wwwroot/app1/*-controller.min.js",
         "./wwwroot/app1/app.min.js"
     ];

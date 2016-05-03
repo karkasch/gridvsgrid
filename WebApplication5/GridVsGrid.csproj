@@ -136,6 +136,7 @@
     <Content Include="gulpfile.js" />
     <Content Include="index.html" />
     <Content Include="Web.config" />
+    <Content Include="wwwroot\app1\angular-grid.html" />
     <Content Include="wwwroot\app1\kendo-grid.html" />
     <Content Include="wwwroot\app1\index.html" />
     <Content Include="wwwroot\lib\kendo\2016.1.412\js\kendo.all.min.js" />
@@ -190,8 +191,11 @@
     <Folder Include="App_Data\" />
     <Folder Include="Controllers\" />
     <Folder Include="Models\" />
+    <Folder Include="wwwroot\lib\angular-ui-grid\" />
   </ItemGroup>
   <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\app1\angulargrid-controller.ts" />
+    <TypeScriptCompile Include="wwwroot\app1\api-service.ts" />
     <TypeScriptCompile Include="wwwroot\app1\app.ts" />
     <TypeScriptCompile Include="wwwroot\app1\index-controller.ts" />
     <TypeScriptCompile Include="wwwroot\app1\kendogrid-controller.ts" />
