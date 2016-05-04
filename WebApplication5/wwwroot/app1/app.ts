@@ -30,7 +30,7 @@ module App {
         } 
     }
 
-    angular.module("app", ["ngRoute", "kendo.directives", "ui.grid"])
+    angular.module("app", ["ngRoute", "kendo.directives", "ui.grid", "ui.grid.infiniteScroll"])
         .service(ApiService.id, ApiService)
         .controller(IndexController.id, IndexController)
         .controller(KendoGridController.id, KendoGridController)

@@ -22,9 +22,7 @@ gulp.task('less', function () {
 gulp.task("ts", function () {
     return gulp.src(tsFiles, { base: "." })
             .pipe(ts())
-            .pipe(minify({
-                ext: ".min.js"
-            }))
+            //.pipe(minify({ ext: ".min.js" }))
             .pipe(gulp.dest("."));
 });
 
@@ -42,9 +40,9 @@ gulp.task("inject", ["less", "ts"], function () {
         "./wwwroot/lib/kendo/2016.1.412/js/kendo.all.min.js",
         "./wwwroot/lib/angular-ui-grid/ui-grid.min.js",
 
-        "./wwwroot/app1/*-service.min.js",
-        "./wwwroot/app1/*-controller.min.js",
-        "./wwwroot/app1/app.min.js"
+        "./wwwroot/app1/*-service.js",
+        "./wwwroot/app1/*-controller.js",
+        "./wwwroot/app1/app.js"
     ];
 
     return gulp.src("./index.html")
